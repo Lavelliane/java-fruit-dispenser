@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="830.0" prefWidth="905.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Rectangle fx:id="changeRectangle" arcHeight="5.0" arcWidth="5.0" fill="#8c4ad9" height="124.0" layoutX="606.0" layoutY="650.0" stroke="#f2eff0" strokeType="INSIDE" strokeWidth="2.0" width="267.0" />
+      <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="#0e0921" height="193.0" layoutX="607.0" layoutY="445.0" stroke="#ffafc1" strokeType="INSIDE" strokeWidth="2.0" width="267.0" />
+      <ImageView fx:id="appleJuiceImage" fitHeight="157.0" fitWidth="204.0" layoutX="69.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@appleJuice.png" />
+         </image></ImageView>
+      <Label layoutX="69.0" layoutY="274.0" text="Apple Juice : $">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="appleSpinner" editable="true" layoutX="67.0" layoutY="332.0" />
+      <Label fx:id="totalCostLabel" layoutX="627.0" layoutY="462.0" text="Total Cost :" textFill="#ffafc1">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalCostDollar" layoutX="635.0" layoutY="522.0" text="\$ " textFill="#ffafc1">
+         <font>
+            <Font size="56.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalCost" layoutX="667.0" layoutY="524.0" text="(PRICE)" textFill="#ffafc1">
+         <font>
+            <Font size="51.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="appleJuiceImage1" fitHeight="157.0" fitWidth="204.0" layoutX="374.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@orangeJuice.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="385.0" layoutY="274.0" text="Orange Juice : $">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="orangeSpinner" editable="true" layoutX="379.0" layoutY="332.0" />
+      <ImageView fitHeight="157.0" fitWidth="204.0" layoutX="63.0" layoutY="393.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@mangoJuice.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="65.0" layoutY="563.0" text="Mango Lassi : $">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="mangoSpinner" editable="true" layoutX="66.0" layoutY="635.0" />
+      <ImageView fitHeight="157.0" fitWidth="204.0" layoutX="374.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@punchJuice.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="390.0" layoutY="563.0" text="Fruit Punch : $">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="punchSpinner" editable="true" layoutX="379.0" layoutY="635.0" />
+      <Label layoutX="120.0" layoutY="720.0" text="Enter Cash">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cashTextField" layoutX="227.0" layoutY="722.0" />
+      <Button fx:id="confirmButton" layoutX="404.0" layoutY="714.0" mnemonicParsing="false" onAction="#confirm" text="Confirm" />
+      <Label fx:id="cashErrorLabel" layoutX="108.0" layoutY="768.0" textFill="#f20b0b">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="107.0" layoutY="300.0" text="Quantity:" />
+      <Label layoutX="414.0" layoutY="300.0" text="Quantity:" />
+      <Label layoutX="98.0" layoutY="592.0" text="Quantity:" />
+      <Label layoutX="414.0" layoutY="592.0" text="Quantity:" />
+      <Label fx:id="quantityAppleLabel" layoutX="159.0" layoutY="300.0" text="X" />
+      <Label fx:id="quantityOrangeLabel" layoutX="471.0" layoutY="300.0" text="X" />
+      <Label fx:id="quantityMangoLabel" layoutX="155.0" layoutY="592.0" text="X" />
+      <Label fx:id="quantityPunchLabel" layoutX="467.0" layoutY="592.0" text="X" />
+      <Label layoutX="614.0" layoutY="658.0" prefHeight="26.0" prefWidth="149.0" text="Change: $" textFill="#ffafc1">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="changeLabel" layoutX="748.0" layoutY="662.0" text="(CHANGE)" textFill="#ffafc1">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="claimChangeButton" alignment="CENTER" layoutX="655.0" layoutY="715.0" mnemonicParsing="false" onAction="#claimChange" prefHeight="25.0" prefWidth="157.0" text="CLAIM CHANGE" />
+      <Label fx:id="changeSuccessLabel" layoutX="733.0" layoutY="726.0" />
+      <Button fx:id="cashRegisterButton" layoutX="639.0" layoutY="393.0" mnemonicParsing="false" onAction="#openCashRegister" prefHeight="38.0" prefWidth="188.0" text="CASH REGISTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="applePrice" layoutX="180.0" layoutY="272.0" prefHeight="30.0" prefWidth="24.0" text="12">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="orangePrice" layoutX="505.0" layoutY="272.0" text="15">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="mangoPrice" layoutX="181.0" layoutY="561.0" text="12">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="207.0" fitWidth="627.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Tisoy%20Fruit%20Dispenser.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="punchPrice" layoutX="502.0" layoutY="561.0" prefHeight="30.0" prefWidth="22.0" text="20">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="276.0" fitWidth="267.0" layoutX="614.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@jennie%20dispenser%20pic.png" />
+         </image></ImageView>
+      <Button fx:id="exitButton" layoutX="639.0" layoutY="41.0" mnemonicParsing="false" onAction="#exit" prefHeight="38.0" prefWidth="188.0" text="Exit">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

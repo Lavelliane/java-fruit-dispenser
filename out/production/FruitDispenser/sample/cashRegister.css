@@ -1,0 +1,46 @@
+.root {
+    -fx-background-color: #0E0921;
+}
+.label {
+    -fx-text-fill : white;
+}
+.button {
+    -fx-font-weight: bold;
+    -fx-background-color: #FFAFC1;
+    -fx-background-radius: 32;
+    -fx-font-size: 16;
+    -fx-text-fill: white;
+
+}
+.button:hover {
+     -fx-font-weight: bold;
+        -fx-background-color: #0E0921;
+        -fx-background-radius: 32;
+        -fx-font-size: 16;
+        -fx-text-fill: #FFAFC1;
+        -fx-border-color:  #FFAFC1;
+        -fx-border-radius: 20;
+        -fx-border-width: 3;
+}
+.button:pressed {
+     -fx-font-weight: bold;
+        -fx-background-color: #0E0921;
+        -fx-background-radius: 32;
+        -fx-font-size: 16;
+        -fx-text-fill: #FFAFC1;
+        -fx-border-color:  #FFAFC1;
+        -fx-border-radius: 20;
+        -fx-border-width: 3;
+        -fx-rotate: 10;
+}
+.text-field {
+  -fx-border-color: #ffafc1;
+  -fx-border-width: 0 0 1 0;
+  -fx-background-color: transparent;
+  -fx-text-fill:#ffafc1;
+  -fx-font-size: 14;
+
+}
+#currentCash{
+    -fx-text-fill: #D946F2;
+}

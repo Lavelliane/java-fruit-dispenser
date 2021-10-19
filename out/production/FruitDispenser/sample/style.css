@@ -1,0 +1,101 @@
+.root {
+    -fx-background-color: #0E0921;
+}
+.label {
+    -fx-text-fill : white;
+}
+#cashErrorLabel {
+    -fx-text-fill: red;
+}
+.button {
+    -fx-font-weight: bold;
+    -fx-background-color: #FFAFC1;
+    -fx-background-radius: 32;
+    -fx-font-size: 16;
+    -fx-text-fill: white;
+
+}
+#claimChangeButton:hover{
+    -fx-font-weight: bold;
+            -fx-background-color: #8C4AD9;
+            -fx-background-radius: 32;
+            -fx-font-size: 16;
+            -fx-text-fill: #FFAFC1;
+            -fx-border-color:  #FFAFC1;
+            -fx-border-radius: 20;
+            -fx-border-width: 3;
+}
+.button:hover {
+     -fx-font-weight: bold;
+        -fx-background-color: #0E0921;
+        -fx-background-radius: 32;
+        -fx-font-size: 16;
+        -fx-text-fill: #FFAFC1;
+        -fx-border-color:  #FFAFC1;
+        -fx-border-radius: 20;
+        -fx-border-width: 3;
+}
+.button:pressed {
+     -fx-font-weight: bold;
+        -fx-background-color: #0E0921;
+        -fx-background-radius: 32;
+        -fx-font-size: 16;
+        -fx-text-fill: #FFAFC1;
+        -fx-border-color:  #FFAFC1;
+        -fx-border-radius: 20;
+        -fx-border-width: 3;
+        -fx-rotate: 10;
+}
+.spinner {
+    -fx-background-color:
+        linear-gradient(to bottom, derive(-fx-text-box-border, -10%), -fx-text-box-border),
+        linear-gradient(from 0px 0px to 0px 5px, derive(-fx-control-inner-background, -9%), -fx-control-inner-background);
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 3, 2;
+    -fx-base:#0E0921;
+
+}
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+	-fx-background-color: #FFAFC1;
+	-fx-background-radius: 0;
+}
+.spinner .increment-arrow-button:hover,
+.spinner .decrement-arrow-button:hover {
+	-fx-background-color: #FFB6C1;
+}
+.spinner .increment-arrow-button:hover:pressed,
+.spinner .decrement-arrow-button:hover:pressed,
+.spinner .increment-arrow-button:pressed,
+.spinner .decrement-arrow-button:pressed {
+	-fx-background-color: #FFB6C1;
+}
+.spinner .increment-arrow-button .increment-arrow,
+.spinner .decrement-arrow-button .decrement-arrow {
+	-fx-background-color: white;
+}
+#changeRectangle{
+    -fx-arc-width: 40;
+    -fx-arc-height: 40;
+}
+#rectangle {
+    -fx-arc-width: 40;
+    -fx-arc-height: 40;
+}
+#totalCost{
+    -fx-text-fill: #D946F2;
+}
+#totalCostDollar{
+    -fx-text-fill: #ffafc1;
+}
+#totalCostLabel{
+    -fx-text-fill: #ffafc1;
+}
+.text-field {
+  -fx-border-color: #ffafc1;
+  -fx-border-width: 0 0 1 0;
+  -fx-background-color: transparent;
+  -fx-text-fill:#ffafc1;
+  -fx-font-size: 14;
+
+}

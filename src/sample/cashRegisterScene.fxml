@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="612.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CashRegisterController">
+   <children>
+      <Label layoutX="23.0" layoutY="25.0" text="Current Cash On Hand : $">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="currentCash" layoutX="289.0" layoutY="21.0" text="(currentCash)" textFill="#eb1414">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="140.0" text="Add quantity of Orange Juice" />
+      <Label layoutX="24.0" layoutY="96.0" text="Add quantity of Apple Juice" />
+      <Label layoutX="24.0" layoutY="182.0" text="Add quantity of Mango Juices" />
+      <Label layoutX="24.0" layoutY="228.0" text="Add quantity of Fruit punch" />
+      <Label layoutX="23.0" layoutY="276.0" text="Set price of Apple Juice" />
+      <Label layoutX="23.0" layoutY="308.0" text="Set price of Orange Juice" />
+      <Label layoutX="23.0" layoutY="341.0" text="Set price of Mango Juice" />
+      <Label layoutX="23.0" layoutY="373.0" text="Set price of Fruit Punch" />
+      <TextField fx:id="newAppleQuantityLabel" layoutX="208.0" layoutY="92.0" prefHeight="25.0" prefWidth="65.0" />
+      <TextField fx:id="newOrangeQuantityLabel" layoutX="208.0" layoutY="136.0" prefHeight="25.0" prefWidth="65.0" />
+      <TextField fx:id="newMangoQuantityLabel" layoutX="208.0" layoutY="178.0" prefHeight="25.0" prefWidth="65.0" />
+      <TextField fx:id="newPunchQuantityLabel" layoutX="208.0" layoutY="224.0" prefHeight="25.0" prefWidth="65.0" />
+      <TextField fx:id="newApplePriceLabel" layoutX="208.0" layoutY="272.0" prefHeight="25.0" prefWidth="65.0" />
+      <TextField fx:id="newOrangePriceLabel" layoutX="208.0" layoutY="304.0" prefHeight="25.0" prefWidth="65.0" />
+      <TextField fx:id="newMangoPriceLabel" layoutX="208.0" layoutY="337.0" prefHeight="25.0" prefWidth="65.0" />
+      <TextField fx:id="newPunchPriceLabel" layoutX="208.0" layoutY="369.0" prefHeight="25.0" prefWidth="65.0" />
+      <Button layoutX="244.0" layoutY="431.0" mnemonicParsing="false" onAction="#saveChanges" text="Save Changes" />
+      <Button layoutX="227.0" layoutY="515.0" mnemonicParsing="false" onAction="#switchToMainScene" text="Back to Dispenser" />
+      <Label fx:id="successSave" alignment="CENTER" layoutX="201.0" layoutY="475.0" prefHeight="17.0" prefWidth="213.0" textFill="#17b93a" />
+   </children>
+</AnchorPane>
